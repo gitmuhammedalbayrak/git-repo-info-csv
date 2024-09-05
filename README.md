@@ -1,42 +1,43 @@
-# GitHub Repo Bilgilerini CSV Formatında İndirme
+# Download GitHub Repo Information in CSV Format
 
-Bu proje, belirli bir GitHub kullanıcısının tüm repo bilgilerini alarak CSV dosyasına kaydeden basit bir Python betiğidir. Repo bilgileri, API üzerinden alınır ve CSV formatında bir dosyaya yazılır. Böylece, GitHub üzerindeki tüm reposuna ait bilgilere kolayca erişebilirsin.
+This project is a simple Python script that retrieves all repository information of a specific GitHub user and saves it into a CSV file. The repository details are fetched via the API and written to a CSV format, making it easy to access information about all repositories of a GitHub user.
 
-## Gereksinimler
+## Requirements
 
-Bu betiği çalıştırmak için aşağıdaki yazılımlara ihtiyacın var:
+To run this script, you'll need the following:
 
 - Python 3.x
-- requests kütüphanesi (API'den veri çekmek için)
-  
-`requests` kütüphanesini yüklemek için terminal ya da komut satırında aşağıdaki komutu çalıştırabilirsin:
+- `requests` library (to fetch data from the API)
+
+You can install the `requests` library by running the following command in your terminal or command prompt:
 
 ```bash
 pip install requests
 ```
 
-## Kullanım
+## Usage
 
-1. Proje dosyalarını indir veya kopyala.
-2. `script.py` dosyasının içerisindeki `username` değişkenine kendi GitHub kullanıcı adını yaz.
-3. Python betiğini çalıştır:
+1. Download or clone the project files.
+2. In the `script.py` file, replace the `username` variable with your GitHub username.
+3. Run the Python script:
 
 ```bash
 python script.py
 ```
 
-4. Script çalıştıktan sonra, proje klasöründe `github_repos.csv` adında bir dosya oluşacak. Bu dosyada, kullanıcıya ait repo bilgileri bulunur.
+4. After the script runs, a file named `github_repos.csv` will be generated in the project folder, containing the repository information for the specified user.
 
-## Çıktı Dosyası
+## Output File
 
-- CSV dosyasındaki kolonlar:
-  - Repo Adı: Projenin adı
-  - Açıklama: Proje açıklaması
-  - Dil: Projenin yazıldığı dil
-  - Yıldız Sayısı: GitHub'daki yıldız sayısı
-  - Fork Sayısı: Repo'nun fork sayısı
-  - URL: GitHub repo URL'si
+The CSV file will contain the following columns:
 
-## Lisans
+- **Repository Name**: The name of the repository
+- **Description**: The description of the repository
+- **Language**: The programming language used in the repository
+- **Star Count**: The number of stars the repository has on GitHub
+- **Fork Count**: The number of forks of the repository
+- **URL**: The GitHub URL of the repository
 
-Bu proje GNU lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına göz atabilirsiniz.
+## License
+
+This project is licensed under the GNU License. For more details, refer to the `LICENSE` file.
